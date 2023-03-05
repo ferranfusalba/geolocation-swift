@@ -13,16 +13,17 @@ enum MapDetails {
 }
 
 final class ContentViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
-    
     @Published var region = MKCoordinateRegion(center: MapDetails.startingLocation, span: MapDetails.defaultSpan)
+    @Published var msg = "Msg";
     
-    var locationManager: CLLocationManager?
+    var locationManager: CLLocationManager?;
     
     func checkIfLocationServicesIsEnabled() {
         if CLLocationManager.locationServicesEnabled() {
             locationManager = CLLocationManager()
             checkLocationAuthorization()
             locationManager!.delegate = self
+            locationManager?.desiredAccuracy = kCLLocationAccuracyBest
         } else {
             print("OFF")
         }
