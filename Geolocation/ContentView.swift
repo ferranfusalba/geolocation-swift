@@ -5,17 +5,19 @@
 //  Created by Ferran Opticks on 5/3/23.
 //
 
+import MapKit
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = ContentViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("This is ContentView")
-        }
-        .padding()
+        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+            .ignoresSafeArea()
+            .accentColor(Color(.systemPink))
+            .onAppear {
+                viewModel.checkIfLocationServicesIsEnabled()
+            }
     }
 }
 

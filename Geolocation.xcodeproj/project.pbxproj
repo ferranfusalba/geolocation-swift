@@ -14,6 +14,7 @@
 		53A9051A29B4EB1B0023B803 /* GeolocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9051929B4EB1B0023B803 /* GeolocationTests.swift */; };
 		53A9052429B4EB1B0023B803 /* GeolocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9052329B4EB1B0023B803 /* GeolocationUITests.swift */; };
 		53A9052629B4EB1B0023B803 /* GeolocationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9052529B4EB1B0023B803 /* GeolocationUITestsLaunchTests.swift */; };
+		53A9053329B513FC0023B803 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9053229B513FC0023B803 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		53A9051F29B4EB1B0023B803 /* GeolocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeolocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A9052329B4EB1B0023B803 /* GeolocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationUITests.swift; sourceTree = "<group>"; };
 		53A9052529B4EB1B0023B803 /* GeolocationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53A9053229B513FC0023B803 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				53A9050B29B4EB1B0023B803 /* Assets.xcassets */,
 				53A9050D29B4EB1B0023B803 /* Geolocation.entitlements */,
 				53A9050E29B4EB1B0023B803 /* Preview Content */,
+				53A9053229B513FC0023B803 /* ContentViewModel.swift */,
 			);
 			path = Geolocation;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				53A9050A29B4EB1A0023B803 /* ContentView.swift in Sources */,
 				53A9050829B4EB1A0023B803 /* GeolocationApp.swift in Sources */,
+				53A9053329B513FC0023B803 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +421,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Geolocation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location...";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -453,6 +458,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Geolocation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location...";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
