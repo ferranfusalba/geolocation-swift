@@ -7,10 +7,13 @@
 
 import MapKit
 import SwiftUI
+import WebKit
 
 struct ContentView: View {
     @StateObject private var viewModel = ContentViewModel()
     @EnvironmentObject var locationManager: LocationManager
+    @State private var showWebView = false
+    private let urlString: String = "https://geolocation.23quirats.com/"
     
     var body: some View {
         let speedKmh = ((locationManager.location?.speed ?? 0.0) * 3600) / 1000
@@ -32,7 +35,23 @@ struct ContentView: View {
                 Text("longitude: \(locationManager.location?.coordinate.longitude ?? 0.0)")
                 Text("altitude: \(locationManager.location?.altitude ?? 0.0)")
             }.padding()
+            VStack {
+                WebView(url: URL(string: urlString)!)
+            }
         }
+    }
+}
+
+struct WebView: UIViewRepresentable {
+    var url: URL
+    
+    func makeUIView(context: Context) -> WKWebView {
+        return WKWebView()
+    }
+    
+    func updateUIView(_ uiView: WKWebView, context: Context) {
+        let request = URLRequest(url: url)
+        uiView.load(request)
     }
 }
 
