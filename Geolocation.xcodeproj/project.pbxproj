@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		539A6AC129B901B200C88778 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539A6AC029B901B200C88778 /* LocationManager.swift */; };
 		53A9050829B4EB1A0023B803 /* GeolocationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9050729B4EB1A0023B803 /* GeolocationApp.swift */; };
 		53A9050A29B4EB1A0023B803 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9050929B4EB1A0023B803 /* ContentView.swift */; };
 		53A9050C29B4EB1B0023B803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A9050B29B4EB1B0023B803 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		539A6AC029B901B200C88778 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		53A9050429B4EB1A0023B803 /* Geolocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geolocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A9050729B4EB1A0023B803 /* GeolocationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationApp.swift; sourceTree = "<group>"; };
 		53A9050929B4EB1A0023B803 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				53A9050729B4EB1A0023B803 /* GeolocationApp.swift */,
+				539A6AC029B901B200C88778 /* LocationManager.swift */,
 				53A9050929B4EB1A0023B803 /* ContentView.swift */,
 				53A9050B29B4EB1B0023B803 /* Assets.xcassets */,
 				53A9050D29B4EB1B0023B803 /* Geolocation.entitlements */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539A6AC129B901B200C88778 /* LocationManager.swift in Sources */,
 				53A9050A29B4EB1A0023B803 /* ContentView.swift in Sources */,
 				53A9050829B4EB1A0023B803 /* GeolocationApp.swift in Sources */,
 				53A9053329B513FC0023B803 /* ContentViewModel.swift in Sources */,

@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var viewModel = ContentViewModel()
+    @EnvironmentObject var locationManager: LocationManager
     
     var body: some View {
         VStack {
@@ -21,9 +22,9 @@ struct ContentView: View {
                 }
             VStack {
                 Text("km/h")
-                Text("lat: ")
-                Text("lon: ")
-                Text("altitude")
+                Text("lat: \(locationManager.location?.coordinate.latitude ?? 0.0)")
+                Text("lon: \(locationManager.location?.coordinate.longitude ?? 0.0)")
+                Text("altitude: \(locationManager.location?.altitude ?? 0.0)")
             }.padding()
         }
     }
@@ -32,5 +33,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(LocationManager())
     }
 }
