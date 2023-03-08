@@ -27,13 +27,13 @@ struct ContentView: View {
                     viewModel.checkIfLocationServicesIsEnabled()
                 }
             VStack {
-                Text("speed m/s: \(locationManager.location?.speed ?? 0.0)")
-                Text("speedAccuracy m/s: \(locationManager.location?.speedAccuracy ?? 0.0)")
-                Text("speed km/h: \(speedKmh)")
-                Text("speedAccuracy km/h: \(speedAccuracyKmh)")
+                Text("altitude: \(locationManager.location?.altitude ?? 0.0)")
                 Text("latitude: \(locationManager.location?.coordinate.latitude ?? 0.0)")
                 Text("longitude: \(locationManager.location?.coordinate.longitude ?? 0.0)")
-                Text("altitude: \(locationManager.location?.altitude ?? 0.0)")
+                Text("speed km/h: \(speedKmh)")
+                Text("speedAccuracy km/h: \(speedAccuracyKmh)")
+                Text("speed m/s: \(locationManager.location?.speed ?? 0.0)")
+                Text("speedAccuracy m/s: \(locationManager.location?.speedAccuracy ?? 0.0)")
             }.padding()
             VStack {
                 WebView(url: URL(string: urlString)!)
