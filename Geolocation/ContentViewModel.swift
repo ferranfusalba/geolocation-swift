@@ -14,7 +14,6 @@ enum MapDetails {
 
 final class ContentViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var region = MKCoordinateRegion(center: MapDetails.startingLocation, span: MapDetails.defaultSpan)
-    @Published var msg = "Msg";
     
     var locationManager: CLLocationManager?;
     

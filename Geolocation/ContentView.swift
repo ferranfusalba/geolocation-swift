@@ -23,7 +23,7 @@ struct ContentView: View {
                 Text("km/h")
                 Text("lat: ")
                 Text("lon: ")
-                Text("\(viewModel.msg)")
+                Text("altitude")
             }.padding()
         }
     }
