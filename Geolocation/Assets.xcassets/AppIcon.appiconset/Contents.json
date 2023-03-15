@@ -1,56 +1,67 @@
 {
   "images" : [
     {
+      "filename" : "AppIcon_iOS_1024_Flat_Temporary.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
     },
     {
+      "filename" : "AppIcon_macOS_16_Flat_Temporary.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "16x16"
     },
     {
+      "filename" : "AppIcon_macOS_32_Flat_Temporary 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "16x16"
     },
     {
+      "filename" : "AppIcon_macOS_32_Flat_Temporary.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
     },
     {
+      "filename" : "AppIcon_macOS_64_Flat_Temporary.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "32x32"
     },
     {
+      "filename" : "AppIcon_macOS_128_Flat_Temporary.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "128x128"
     },
     {
+      "filename" : "AppIcon_macOS_256_Flat_Temporary 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
+      "filename" : "AppIcon_macOS_256_Flat_Temporary.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
     },
     {
+      "filename" : "AppIcon_macOS_512_Flat_Temporary 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"
     },
     {
+      "filename" : "AppIcon_macOS_512_Flat_Temporary.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
     },
     {
+      "filename" : "AppIcon_iOS_1024_Flat_Temporary 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"
