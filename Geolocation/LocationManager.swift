@@ -2,7 +2,7 @@
 //  LocationManager.swift
 //  Geolocation
 //
-//  Created by Ferran Opticks on 8/3/23.
+//  Created by Ferran on 8/3/23.
 //
 
 import Foundation

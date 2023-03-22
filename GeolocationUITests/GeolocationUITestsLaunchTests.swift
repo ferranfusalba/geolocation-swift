@@ -2,7 +2,7 @@
 //  GeolocationUITestsLaunchTests.swift
 //  GeolocationUITests
 //
-//  Created by Ferran Opticks on 5/3/23.
+//  Created by Ferran on 5/3/23.
 //
 
 import XCTest
